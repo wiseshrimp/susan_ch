@@ -1,8 +1,8 @@
 import React from 'react'
 import Draggable from 'react-draggable'
-import { POPUPS, CREDITS } from './constants'
+import { POPUPS, CREDITS } from '../constants/constants'
 
-import './Popup.css'
+import '../css/Popup.css'
 
 export default class Photos extends React.Component {
     constructor(props) {

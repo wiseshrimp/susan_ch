@@ -1,8 +1,8 @@
 import React from 'react'
 import Draggable from 'react-draggable'
 
-import './Popup.css'
-import './Photos.css'
+import '../css/Popup.css'
+import '../css/Photos.css'
 
 export default class Delete extends React.Component {
 

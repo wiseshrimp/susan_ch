@@ -78,7 +78,7 @@
 }
 
 .folder {
-    background-image: url('./assets/folder1.png');
+    background-image: url('../assets/folder1.png');
     background-size: contain;
     height: 125px;
     width: 125px;

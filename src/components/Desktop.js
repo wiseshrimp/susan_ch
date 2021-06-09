@@ -8,16 +8,17 @@ import Clock from './Clock'
 import Popup from './Popup'
 import Photos from './Photos'
 import Update from './Update'
+import Language from './Language'
 import Login from './Login'
 import Revert from './Revert'
 import Zoom from './Zoom'
-import {POPUPS, VIDEOS, VIDEO_LINKS, UPDATE_VIDEOS, SOUNDS, POPUP_VIDEOS} from './constants'
-import {formatTime} from './utils'
-import './glitch.css'
+import {POPUPS, VIDEOS, VIDEO_LINKS, UPDATE_VIDEOS, SOUNDS, POPUP_VIDEOS} from '../constants/constants'
+import {formatTime} from '../utils'
+import '../css/glitch.css'
 
-import Selfie1 from './assets/Selfie1.png'
-import Selfie2 from './assets/Selfie2.png'
-import Selfie3 from './assets/Selfie3.png'
+import Selfie1 from '../assets/Selfie1.png'
+import Selfie2 from '../assets/Selfie2.png'
+import Selfie3 from '../assets/Selfie3.png'
 
 let NUM_OF_MINUTES = 7
 let isDev = false
@@ -67,12 +68,14 @@ class Desktop extends React.Component {
       isGlitching: false,
       updateCount: 0,
       hasUpdated: false,
+      isLanguageScreen: false,
       isPlayingClosing: false,
       isMobile:  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
       isChrome: true,
       isZoom: false,
       minutes: NUM_OF_MINUTES,
-      seconds: 0
+      seconds: 0,
+      language: 'en'
     }
   }
 
@@ -95,6 +98,12 @@ class Desktop extends React.Component {
     }
 
     this.setupWebcam()
+  }
+
+  changeLanguage = language => {
+    this.setState({
+      language
+    })
   }
 
   checkWebm = () => {
@@ -687,17 +696,40 @@ class Desktop extends React.Component {
     </div>
   )
 
-  renderFirstScreen = () => (
-    <div>
-      <div className="background"></div>
-      {this.state.isPlayingOpening ? null : <Login  hasLoaded={this.state.isVideoLoaded}
-                                                    playOpening={this.playOpening}
-                                                    turnOffCaptions={this.turnOffCaptions}
-                                                    turnOnCaptions={this.turnOnCaptions}
-                                                    isCaptions={this.state.isCaptions}
-                                                    isMobile={this.state.isMobile || !this.state.isChrome}  />}
-    </div>
-  )
+  chooseLanguage = ev => {
+    this.setState({
+      isLanguageScreen: true
+    })
+  }
+
+  renderFirstScreen = () => {
+    if (this.state.isLanguageScreen) {
+      return (
+        <div>
+          <div className="background"></div>
+          {this.state.isPlayingOpening ? null : <Language  
+                                                        playOpening={this.playOpening}
+                                                        turnOffCaptions={this.turnOffCaptions}
+                                                        turnOnCaptions={this.turnOnCaptions}
+                                                        isCaptions={this.state.isCaptions}
+                                                        changeLanguage={this.changeLanguage}
+                                                />}
+        </div>
+      )
+    } else {
+      return (
+        <div>
+        <div className="background"></div>
+        {this.state.isPlayingOpening ? null : <Login  hasLoaded={this.state.isVideoLoaded}
+                                                      chooseLanguage={this.chooseLanguage}
+                                                      turnOffCaptions={this.turnOffCaptions}
+                                                      turnOnCaptions={this.turnOnCaptions}
+                                                      isCaptions={this.state.isCaptions}
+                                                      isMobile={this.state.isMobile || !this.state.isChrome}  />}
+        </div>
+      )
+    }
+  }
 
   playOpening = () => {
     this.playVideo(VIDEOS.openingVideo, false)

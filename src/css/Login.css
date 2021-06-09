@@ -90,8 +90,17 @@ body {
     margin-top: 10px;
 }
 
+.guest-text {
+    color: #ffffffbf;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
 #accessibility {
-    background-image: url(./assets/cc-02.png);
+    background-image: url('../assets/cc-02.png');
     height: 50px;
     width: 50px;
     background-size: contain;
@@ -123,12 +132,13 @@ body {
 }
 
 .user-icon {
-    background-image: url('./assets/user.png');
+    background-image: url('../assets/user.png');
     height: 80px;
     width: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: auto;
+    cursor: pointer;
 }
 
 .Login > .window {
@@ -148,7 +158,7 @@ body {
 .warning-icon {
     height: 75px;
     width: 75px;
-    background-image: url('./assets/warning.png');
+    background-image: url('../assets/warning.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

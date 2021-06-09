@@ -1,8 +1,8 @@
 import React from 'react'
 import Draggable from 'react-draggable'
 
-import './Popup.css'
-import './Zoom.css'
+import '../css/Popup.css'
+import '../css/Zoom.css'
 
 export default class Zoom extends React.Component {
     constructor(props) {

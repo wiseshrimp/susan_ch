@@ -1,7 +1,7 @@
 import React from 'react'
 import Draggable from 'react-draggable'
 
-import './Update.css'
+import '../css/Update.css'
 
 export default class Revert extends React.Component {
     constructor(props) {

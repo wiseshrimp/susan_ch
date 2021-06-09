@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url('./assets/glitch_background.gif');
+    background-image: url('../assets/glitch_background.gif');
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;

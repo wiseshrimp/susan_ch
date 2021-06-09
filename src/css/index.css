@@ -1,21 +1,21 @@
 @font-face {
   font-family: LucidaS;
-  src: url('./assets/SF-UI-Text-Medium.otf');
+  src: url('../assets/SF-UI-Text-Medium.otf');
 }
 
 @font-face {
   font-family: LucidaG;
-  src: url('./assets/LucidaGrandeRegular.ttf');
+  src: url('../assets/LucidaGrandeRegular.ttf');
 }
 
 @font-face {
   font-family: Helvetica;
-  src: url('./assets/Helvetica.ttf');
+  src: url('../assets/Helvetica.ttf');
 }
 
 @font-face {
   font-family: HelveticaNeue;
-  src: url('./assets/fonts/HelveticaNeueLTPro-UltLt.otf');
+  src: url('../assets/fonts/HelveticaNeueLTPro-UltLt.otf');
 }
 
 body {
@@ -151,7 +151,7 @@ body {
 
 /* Desktop */
 .background {
-  background-image: url('./assets/mojave_day.jpg');
+  background-image: url('../assets/mojave_day.jpg');
   /* background-color: #d8d8d8;   */
   background-size: cover;
   background-position-x: center;
@@ -244,7 +244,7 @@ body {
 
 #start-button {
   height: 40px;
-  background-image: url('./assets/StartButton.png');
+  background-image: url('../assets/StartButton.png');
   width: 150px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -422,7 +422,7 @@ body {
 } */
 
 .social-icon.linkedin {
-  background-image: url('./assets/linkedin.png');
+  background-image: url('../assets/linkedin.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -430,7 +430,7 @@ body {
 }
 
 .social-icon.email {
-  background-image: url('./assets/mail.png');
+  background-image: url('../assets/mail.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -438,7 +438,7 @@ body {
 }
 
 .social-icon.github {
-  background-image: url('./assets/github.png');
+  background-image: url('../assets/github.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -519,7 +519,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .apple {
-  background-image: url('./assets/apple.png');
+  background-image: url('../assets/apple.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 20px;
@@ -529,7 +529,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .heart {
-  background-image: url('./assets/heart.png');
+  background-image: url('../assets/heart.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 19px;
@@ -539,7 +539,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .time {
-  background-image: url('./assets/clock.png');
+  background-image: url('../assets/clock.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 18px;
@@ -549,7 +549,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .wifi {
-  background-image: url('./assets/wifi.png');
+  background-image: url('../assets/wifi.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 20px;
@@ -559,7 +559,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .who {
-  background-image: url('./assets/profile-user.png');
+  background-image: url('../assets/profile-user.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 20px;
@@ -569,7 +569,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .captions {
-  background-image: url('./assets/captions.png');
+  background-image: url('../assets/captions.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -580,7 +580,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .battery {
-  background-image: url('./assets/battery.png');
+  background-image: url('../assets/battery.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 20px;
@@ -600,7 +600,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .mojave-night {
-  background-image: url('./assets/mojave-night.jpg');
+  background-image: url('../assets/mojave-night.jpg');
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
@@ -654,7 +654,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .finder {
-  background-image: url('./assets/finder.png');
+  background-image: url('../assets/finder.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 70px;
@@ -663,7 +663,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .zoom {
-  background-image: url('./assets/zoom1.png');
+  background-image: url('../assets/zoom1.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 64px;
@@ -672,7 +672,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .safari {
-  background-image: url('./assets/safari.png');
+  background-image: url('../assets/safari.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 65px;
@@ -681,7 +681,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .photos {
-  background-image: url('./assets/photos.png');
+  background-image: url('../assets/photos.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 70px;
@@ -690,7 +690,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .trash {
-  background-image: url('./assets/trash.png');
+  background-image: url('../assets/trash.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 70px;
@@ -724,7 +724,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .newbackground {
-  background-image: url('./assets/elcapitan.jpg');
+  background-image: url('../assets/elcapitan.jpg');
   /* background-color: #d8d8d8;   */
   background-size: cover;
   background-position-x: center;

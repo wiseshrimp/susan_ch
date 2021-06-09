@@ -1,9 +1,9 @@
 import React from 'react'
 import Draggable from 'react-draggable'
 
-import './Captions.css'
+import '../css/Captions.css'
 
-import {CAPTION_VIDEO_LINKS} from './constants'
+import {CAPTION_VIDEO_LINKS} from '../constants/constants'
 
 export default class Captions extends React.Component {
     constructor(props) {

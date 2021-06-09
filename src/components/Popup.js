@@ -1,9 +1,9 @@
 import React from 'react'
 import Draggable from 'react-draggable'
 
-import './Popup.css'
-import './Photos.css'
-import { VIDEOS } from './constants'
+import '../css/Popup.css'
+import '../css/Photos.css'
+import { VIDEOS } from '../constants/constants'
 
 export default class Popup extends React.Component {
     constructor(props) {

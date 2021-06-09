@@ -1,7 +1,7 @@
 import React from 'react'
 import Draggable from 'react-draggable'
 
-import './Login.css'
+import '../css/Login.css'
 
 export default class Login extends React.Component {
     constructor(props) {
@@ -37,8 +37,12 @@ export default class Login extends React.Component {
                 this.input.current.classList.add('shake')
                 return
             }
-            this.props.playOpening()
+            this.props.chooseLanguage()
         }
+    }
+
+    onNext = ev => {
+        this.props.chooseLanguage()
     }
 
     activateHint = ev => {
@@ -57,13 +61,16 @@ export default class Login extends React.Component {
 
     renderInput = () => (
         <div className="login-container">
-            <div className="user-icon"></div>
-            <div className="login-input-container">
-                <input 
+            <div className="user-icon"
+                onClick={this.onNext}></div>
+            <div className="guest-text"
+                onClick={this.onNext}>
+                Guest User
+                {/* <input 
                     onClick={this.activateHint}
-                    ref={this.input} onKeyDown={this.onKeyDown} className="password-input" placeholder="Enter Password" type="password"></input>
+                    ref={this.input} onKeyDown={this.onKeyDown} className="password-input" placeholder="Enter Password" type="password"></input> */}
             </div>
-            <div className={`hint ${this.state.isHint ? 'active' : ''}`}>Anything you want...</div>
+            {/* <div className={`hint ${this.state.isHint ? 'active' : ''}`}>Anything you want...</div> */}
 
             <div id="icons">
                 <div onClick={this.toggleCaptions} className={`icon-container ${this.state.areCaptions ? 'activated' : ''}`}>

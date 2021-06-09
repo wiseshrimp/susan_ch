@@ -3,7 +3,7 @@ import Draggable from 'react-draggable'
 import Clock from 'react-clock'
 
 import 'react-clock/dist/Clock.css'
-import './Clock.css'
+import '../css/Clock.css'
 
 export default class TopBarClock extends React.Component{
     constructor(props) {
