@@ -20,7 +20,7 @@ import Selfie1 from '../assets/Selfie1.png'
 import Selfie2 from '../assets/Selfie2.png'
 import Selfie3 from '../assets/Selfie3.png'
 
-let NUM_OF_MINUTES = 7
+let NUM_OF_MINUTES = 5
 let isDev = false
  
 const AVATAR_PHOTOS = [
@@ -536,6 +536,7 @@ class Desktop extends React.Component {
     <Revert
       setDragging={this.setDragging}
       revert={this.revert}
+      language={this.state.language}
     />
   )
 

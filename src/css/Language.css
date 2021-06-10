@@ -52,9 +52,9 @@ option {
     cursor: pointer;
 }
 
-select:-internal-list-box:focus {
+.language-select-op {
     border-color: #9ec4fb !important;
-    box-shadow: 0px 0px 4px #9ec4fb;
+    box-shadow: 0px 0px 4px #9ec4fb !important;
     border-width: 2px;
 }
 

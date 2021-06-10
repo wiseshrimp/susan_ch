@@ -31,10 +31,11 @@ export default class Language extends React.Component {
                     <div className="welcome">Welcome</div>
                     <div className="language-select">
                         <select 
+                            className="language-select-op"
                             onChange={this.changeLanguage}
                             defaultValue="en" size="2">
                             <option value="en">Use English for the main language (recommended)</option>
-                            <option value="ch">使用英语作为主要语言</option>
+                            <option value="ch">使用中文作为主要语言</option>
                         </select>
                     </div>
                     <div className={`warning-chinese ${this.state.language === 'ch' ? 'visible' : 'hidden'}`}>没有中文字幕</div>

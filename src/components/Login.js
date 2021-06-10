@@ -99,14 +99,15 @@ export default class Login extends React.Component {
     
     render () {
         return (
-            <div className="Login">
-                {this.props.isMobile ? this.renderWarning() : null}
-                <div className="blur">
-                    <div className="black-overlay"></div>
-                    <div className="background"></div>
+
+                <div className="Login">
+                    {this.props.isMobile ? this.renderWarning() : null}
+                    <div className="blur">
+                        <div className="black-overlay"></div>
+                        <div className="background"></div>
+                    </div>
+                    {!this.props.isMobile ? this.renderInput() : null}
                 </div>
-                {!this.props.isMobile ? this.renderInput() : null}
-            </div>
         )
     }
 }

@@ -39,11 +39,11 @@ export default class Revert extends React.Component {
                                 <div className="closebutton"><span><strong>x</strong></span></div>
                             </div>
                         </div>
-                        <div className="title-header">Software Update</div>
+                        <div className="title-header">{this.props.language === 'ch' ? '软件更新' : 'Software Update'}</div>
                     </div>
                     <div className="update-body">
-                        <div className="update-text">Revert back to old operating system?</div>
-                        <div className="update-button" onClick={this.props.revert}>Revert</div>
+                        <div className="update-text">{this.props.language === 'en' ? 'Revert back to old operating system? Or refresh the page to restart the experience.' : '恢复到旧操作系统？ 或者刷新页面重新开始体验'}</div>
+                        <div className="update-button" onClick={this.props.revert}>{this.props.language === 'en' ? 'Revert' : '恢复'}</div>
                     </div>
                 </div>
             </Draggable>

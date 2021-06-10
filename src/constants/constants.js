@@ -89,12 +89,14 @@ const VIDEOS = {
     safariBing: 'videos/Safari_Bing_Ch.webm',
     preUpdate: 'videos/PreUpdate_Ch.webm',
     endingSequence: 'videos/Ending_Ch.webm',
-    zoom: 'videos/Zoom_Ch.webm'
-
-
-
-
-
+    zoom: 'videos/Zoom_Ch.webm',
+    apple: 'videos/Apple_Ch.webm',
+    safariOpening: 'videos/Safari_Opening_Ch.webm',
+    updateNotification0: 'videos/UpdateNotification0_Ch.webm',
+    updateNotification1: 'videos/UpdateNotification1_Ch.webm',
+    updateNotification2: 'videos/UpdateNotification2_Ch.webm',
+    updateNotification3: 'videos/UpdateNotification3_Ch.webm',
+    newSusan: 'videos/NewSusan_Ch.webm'
   }
   
   const VIDEO_LINKS = {
@@ -116,21 +118,14 @@ const VIDEOS = {
     safariBing: 'videos/Safari_Bing.webm',
     preUpdate: 'videos/PreUpdate.webm',
     endingSequence: 'videos/Ending.webm',
-    zoom: 'videos/Zoom.webm'
-
-
-
-
-
-
-
-    // apple: "https://sues-website.s3.us-east-2.amazonaws.com/internetgirl/Apple.webm",
-    // safariOpening: "https://sues-website.s3.us-east-2.amazonaws.com/internetgirl/Safari_Opening.webm",
-    // updateNotification0: 'https://sues-website.s3.us-east-2.amazonaws.com/internetgirl/UpdateNotification0.webm',
-    // updateNotification1: 'https://sues-website.s3.us-east-2.amazonaws.com/internetgirl/UpdateNotification1.webm',
-    // updateNotification2: 'https://sues-website.s3.us-east-2.amazonaws.com/internetgirl/UpdateNotification2.webm',
-    // updateNotification3: 'https://sues-website.s3.us-east-2.amazonaws.com/internetgirl/UpdateNotification3.webm',
-    // newSusan: 'https://sues-website.s3.us-east-2.amazonaws.com/internetgirl/New_Susan_1.webm',
+    zoom: 'videos/Zoom.webm',
+    apple: 'videos/Apple.webm',
+    safariOpening: 'videos/Safari_Opening.webm',
+    updateNotification0: 'videos/UpdateNotification0.webm',
+    updateNotification1: 'videos/UpdateNotification1.webm',
+    updateNotification2: 'videos/UpdateNotification2.webm',
+    updateNotification3: 'videos/UpdateNotification3.webm',
+    newSusan: 'videos/NewSusan.webm'
   }
 
   const CHINESE_HEADERS = {
