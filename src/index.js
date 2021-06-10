@@ -2,11 +2,11 @@
 import reportWebVitals from './reportWebVitals';
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './animations.css'
-import './index.css'
-import './media.css'
+import './css/animations.css'
+import './css/index.css'
+import './css/media.css'
 
-import Desktop from './Desktop'
+import Desktop from './components/Desktop'
 
 ReactDOM.render(<Desktop />, document.getElementById('root'))
 
